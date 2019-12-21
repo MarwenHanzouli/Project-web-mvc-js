@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nouveau</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js">
+		
+	</script>
+	<script type="text/javascript" src="./scripts/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<p><i class="fas fa-comments"></i>Messagerie</p>
+		</div>
+		<div id="authentification">
+			<p class="nomPrenomUtilisateur"></p>
+			<img src="./images/MH.jpg" class="imgConnexion">
+			<button class="btnDecon">Déconnexion<i class='fas fa-user-times'></i></button>
+		</div>
+		<div class="menu">
+			<hr class="menu-lignes">
+			<hr class="menu-lignes">
+			<hr class="menu-lignes">
+		</div>
+		
+	</header>
+	<div class="menuitems">
+			<div class="authen">
+				<p class="nomPrenomUtilisateur">Marwen Hanzouli </p>
+				<img src="./images/MH.jpg" class="imgConnexion">
+			</div>
+			<div class="boutonDec">
+				<button class="btnDecon">Déconnexion<i class='fas fa-user-times'></i></button>
+			</div>
+			
+		</div>
+	<main>
+		<aside>
+			<div id="btnCompte"><p><i id="i4" class="fas fa-plus-circle"></i>Compte</p></div>
+			<div id="btnNouveau"><p><i id="i1" class="fas fa-plus-circle"></i>Nouveau message</p></div>
+			<div id="btnReception" class="class1"><p><i id="i2" class='fas fa-mail-bulk '></i>Boîte de réception</p></div>
+			<div id="btnEnvoyes"><p><i id="i3" class="fa fa-send"></i>Messages envoyés</p></div>
+			<div id="btnUsers"><p><i id="i5" class="fa fa-send"></i>Gestion des utilisateurs</p></div>
+			
+		</aside>
+		<section>
+			<div class="Compte">
+				<p class="titre">Modifier mon compte : </p>
+				<input type="text" id="nom" placeholder="Nom">
+				<input type="text" id="prenom" placeholder="Prénom">
+				<input type="text" id="email" placeholder="Email">
+				<input type="password" id="password" placeholder="Mot de passe">
+				<input type="password2" id="password2" placeholder="Confirmer le nouveau mot de passe">
+			  	<input type="submit" id="btnEnvoyer2" value="Modifier">
+			</div>
+			<div class="nouveau">
+				<p>Écrire un message : </p>
+				<input list="contacts" id="contact" placeholder="Destinataire">
+			  	<datalist id="contacts" >
+				    
+			  	</datalist>
+			  	<input type="text" id="objet" placeholder="Objet">
+			  	<textarea rows="17" cols="10" id="sujet" placeholder="Sujet"></textarea>
+			  	<input type="submit" id="btnEnvoyer" value="Envoyer">
+			</div>
+			
+			<div class="reception">
+				<p class="titre">Messages réçus</p>
+				<div class="table">
+					<table class="messages">
+					  <tr>
+					   
+					    <th>Message</th>
+					    <th >Supprimer</th>
+					  </tr>
+					  <tbody class="coeur">
+					  	
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="envoyes">
+				<p class="titre">Messages envoyés</p>
+				<div class="table">
+					<table class="messages">
+					  <tr>
+					    
+					    <th>Message</th>
+					    <th>Supprimer</th>
+					  </tr>
+					  <tbody class="coeur2">
+					  	
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="USERS">
+				<p class="titre">Supprimer des utilisateurs</p>
+				<div class="table">
+					
+					<table class="messages">
+					  <tr>
+					   
+					    <th>Message</th>
+					    <th >Supprimer</th>
+					  </tr>
+					  <tbody class="coeurUSERS">
+					  	
+					  </tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>© 2019 Copyright Text </p>
+	</footer>
+</body>
+<script src="./js/model.js"></script>
+  <script src="./js/controller.js"></script>
+  <script src="./js/main.js"></script>
+  <script >
+  	
+  	var n =messages();
+  </script>
+</html>
